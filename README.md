@@ -50,7 +50,9 @@ Borrow out = A'Bin + A'B + BBin
 5 . For different input combinations generate the timing diagram.
 
 **Program:**
+
 Full adder
+
 ```
 module fulladd_top(a,b,cin,sum,carry);
 input a,b,cin;
@@ -64,7 +66,9 @@ and(w4,cin,a);
 or(carry,w2,w3,w4);
 endmodule
 ```
+
 Full subtractor
+
 ```
 module fullsub_top(a,b,Bin,BO,DIFF);
 input a,b,Bin;
@@ -77,9 +81,13 @@ endmodule
 ![image](https://github.com/BIDHISHA10/FULL_ADDER_SUBTRACTOR/assets/152273292/53e05d28-1d41-4af7-89eb-085145274a1a)
 
 **Output Timing Waveform:**
+
 Full adder
+
 ![image](https://github.com/BIDHISHA10/FULL_ADDER_SUBTRACTOR/assets/152273292/9ddac565-32d9-4aee-91b6-9087a0845d6b)
+
 Full subtractor
+
 ![image](https://github.com/BIDHISHA10/FULL_ADDER_SUBTRACTOR/assets/152273292/ee83f415-1ffb-414a-a3cb-87c1e5ccb4ab)
 
 **Result:**
