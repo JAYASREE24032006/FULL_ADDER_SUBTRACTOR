@@ -1,8 +1,9 @@
-Ex 4 : **FULL_ADDER_SUBTRACTOR**
+## Ex-4 FULL_ADDER_SUBTRACTOR
 
-Implementation-of-Full-Adder-and-Full-subtractor-circuit
+**DATE : 22.03.2024**
 
-**AIM:**
+
+**Aim:**
 
 To design a Full Adder and Full Subtractor circuit and verify its truth table in Quartus using Verilog programming.
 
@@ -12,9 +13,9 @@ Hardware – PCs, Cyclone II , USB flasher
 
 Software – Quartus prime
 
-**Full Adder and Full Subtractor**
+**Full Adder and Full Subtractor:**
 
-**Full Adder**
+**Full Adder:**
 
 Full adder is a digital circuit used to calculate the sum of three binary bits. It consists of three inputs and two outputs. Two of the input variables, denoted by A and B, represent the two significant bits to be added. The third input, Cin, represents the carry from the previous lower significant position. Two outputs are necessary because the arithmetic sum of three binary digits ranges in value from 0 to 3, and binary 2 or 3 needs two digits. The two outputs are sum and carry.
 
@@ -24,9 +25,9 @@ Carry = AB + ACin + BCin
 
 ![image](https://github.com/naavaneetha/FULL_ADDER_SUBTRACTOR/assets/154305477/0f30ba51-5ffb-4198-845f-18e054f675e7)
 
-**Figure -1 FULL ADDER**
+Figure -1 FULL ADDER
 
-**Full Subtractor**
+**Full Subtractor:**
 
 A full subtractor is a combinational circuit that performs subtraction involving three bits, namely minuend, subtrahend, and borrow-in . It accepts three inputs: minuend, subtrahend and a borrow bit and it produces two outputs: difference and borrow.
 
@@ -36,18 +37,19 @@ Diff = A ⊕ B ⊕ Bin
 
 Borrow out = A'Bin + A'B + BBin
 
-**Truthtable**
+**Procedure:**
 
-**Procedure**
+1 . Type the program in Quartus software.
 
-Write the detailed procedure here
+2 .  Compile and run the program.
+
+3 . Generate the RTL schematic and save the logic diagram.
+
+4 . Create nodes for inputs and outputs to generate the timing diagram.
+
+5 . For different input combinations generate the timing diagram.
 
 **Program:**
-
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. 
-Developed by:GOGINENI BIDHISHA
-RegisterNumber:212223040048
-*/
 Full adder
 ```
 module fulladd_top(a,b,cin,sum,carry);
@@ -71,10 +73,10 @@ assign DIFF = a ^ b ^ Bin;
 assign BO = (a & b) | ((a ^ b) & Bin);
 endmodule
 ```
-**RTL Schematic**
+**RTL Schematic:**
 ![image](https://github.com/BIDHISHA10/FULL_ADDER_SUBTRACTOR/assets/152273292/53e05d28-1d41-4af7-89eb-085145274a1a)
 
-**Output Timing Waveform**
+**Output Timing Waveform:**
 Full adder
 ![image](https://github.com/BIDHISHA10/FULL_ADDER_SUBTRACTOR/assets/152273292/9ddac565-32d9-4aee-91b6-9087a0845d6b)
 Full subtractor
